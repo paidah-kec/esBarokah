@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Es Barokah | Segarnya Kebahagiaan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-poppins bg-black text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-black/90 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gold">Es Barokah</h1>
+
+    <ul class="hidden md:flex space-x-8 text-sm font-medium">
+      <li><a href="#home" class="hover:text-gold transition">Beranda</a></li>
+      <li><a href="#menu" class="hover:text-gold transition">Menu</a></li>
+      <li><a href="#about" class="hover:text-gold transition">Tentang Kami</a></li>
+      <li><a href="#contact" class="hover:text-gold transition">Kontak</a></li>
+    </ul>
+
+    <button id="menuBtn" class="md:hidden text-xl">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-white/10">
+    <a href="#home" class="block px-6 py-3 hover:bg-white/5">Beranda</a>
+    <a href="#menu" class="block px-6 py-3 hover:bg-white/5">Menu</a>
+    <a href="#about" class="block px-6 py-3 hover:bg-white/5">Tentang Kami</a>
+    <a href="#contact" class="block px-6 py-3 hover:bg-white/5">Kontak</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-black via-gray-900 to-black">
+  <div class="max-w-3xl mt-24 reveal">
+    <h2 class="text-4xl md:text-5xl font-bold text-gold mb-4">
+      Drinks - Coffee - Tea
+    </h2>
+    <p class="text-gray-300 mb-8">
+      Aneka minuman es berkualitas premium dengan harga ramah di kantong. Segarnya Kebahagiaan dalam Setiap Rasa!
+    </p>
+    <a href="#menu" class="cta-btn">
+      Pilih Kesegaranmu Sekarang
+    </a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="py-20 px-6 bg-black">
+  <div class="max-w-7xl mx-auto text-center">
+    <h3 class="text-3xl font-bold text-gold mb-12 reveal">Menu Barokah</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- CARD -->
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="EsTehRacik.png" alt="Es Teh Racik">
+        </div>
+        <div class="p-6">
+          <h4>Es Teh Racik</h4>
+          <p>Perpaduan daun teh pilihan yang wangi, sepat, dan manisnya pas.</p>
+          <span class="menu-price">
+            Rp 4.000 <small>(R)</small> / Rp 5.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="AppleTea.png" alt="Apple Tea">
+        </div>
+        <div class="p-6">
+          <h4>Apple Tea</h4>
+          <p>Kesegaran teh berpadu dengan aroma apel yang manis dan fruity.</p>
+          <span class="menu-price">
+            Rp 5.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="LemonTea.png" alt="Lemon Tea">
+        </div>
+        <div class="p-6">
+          <h4>Lemon Tea</h4>
+          <p>Sensasi asam segar lemon asli yang membangkitkan semangat.</p>
+          <span class="menu-price">
+            Rp 5.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="ManggoTea.png" alt="Manggo Tea">
+        </div>
+        <div class="p-6">
+          <h4>Manggo Tea</h4>
+          <p>Manisnya mangga eksotis dalam setiap tegukan teh dingin.</p>
+          <span class="menu-price">
+            Rp 5.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="EsJerukAsli.png" alt="Es Jeruk Asli">
+        </div>
+        <div class="p-6">
+          <h4>Es Jeruk Asli</h4>
+          <p>Perasan jeruk segar pilihan, kaya vitamin C dan murni alami.</p>
+          <span>Rp 7.000</span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="PopIce.png" alt="Pop Ice">
+        </div>
+        <div class="p-6">
+          <h4>Pop Ice</h4>
+          <p>Minuman blender legendaris dengan berbagai varian rasa ceria.</p>
+          <span class="menu-price">
+            Rp 5.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="KopiInstanIce-Hot.png" alt="Kopi Instan">
+        </div>
+        <div class="p-6">
+          <h4>Kopi Instan Dingin/Panas</h4>
+          <p>Kopi creamy favorit, nikmat disajikan dingin maupun panas.</p>
+          <span class="menu-price">
+            Rp 5.000 <small>(R)</small> / Rp 7.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="KopiHitam.png" alt="Kopi Hitam">
+        </div>
+        <div class="p-6">
+          <h4>Kopi Hitam</h4>
+          <p>Aroma kopi robusta yang kuat dan mantap untuk pecinta kopi sejati.</p>
+          <span>Rp 5.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="GreenTea.png" alt="Es Green Tea">
+        </div>
+        <div class="p-6">
+          <h4>Es Green Tea</h4>
+          <p>Teh hijau autentik yang lembut dan menenangkan di tenggorokan.</p>
+          <span class="menu-price">
+            Rp 8.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="ThaiTea.png" alt="Es Thai Tea">
+        </div>
+        <div class="p-6">
+          <h4>Es Thai Tea</h4>
+          <p>Racikan teh khas Thailand yang creamy, gurih, dan beraroma unik.</p>
+          <span class="menu-price">
+            Rp 8.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+      
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="Avocado.png" alt="Avocado">
+        </div>
+        <div class="p-6">
+          <h4>Avocado</h4>
+          <p>Kelembutan rasa alpukat yang manis, kental, dan memanjakan lidah.</p>
+          <span class="menu-price">
+            Rp 8.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+      
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="Taro.png" alt="Taro">
+        </div>
+        <div class="p-6">
+          <h4>Taro</h4>
+          <p>Rasa talas ungu yang unik, manis, dan memberikan sensasi nutty.</p>
+          <span class="menu-price">
+            Rp 8.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="EsCoklatBiasa.png" alt="Es Coklat Biasa">
+        </div>
+        <div class="p-6">
+          <h4>Es Coklat Biasa</h4>
+          <p>Coklat pekat, creamy, dan menyegarkan.</p>
+          <span class="menu-price">
+            Rp 8.000 <small>(R)</small> / Rp 10.000 <small>(J)</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <div class="menu-image">
+        <span class="menu-badge"><p>Reguler / Jumbo</p></span>
+        <img src="EsCoklatSpecial.png" alt="Es Coklat Special">
+        </div>
+        <div class="p-6">
+          <h4>Es Coklat Special</h4>
+          <p>Coklat premium ekstra pekat dengan tekstur yang lebih rich.</p>
+          <span>Rp 10.000</span>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+    <p style="font-size: smaller;">*harga tertera untuk kemasan reguler dan jumbo</p>
+  <div class="max-w-7xl mx-auto text-center"><br><br>
+    <h3 class="text-3xl font-bold text-gold mb-12 reveal">Ektra Bahagia</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- CARD TAMBAHAN -->
+       <div class="menu-card reveal">
+        <img src="BiskuitHitam.png" alt="Biskuit Hitam">
+        <div class="p-6">
+          <h4>Topping Biskuit Hitam</h4>
+          <p>Tambahan renyah biskuit coklat legendaris untuk sensasi lebih seru!</p>
+          <span>Rp 1.000</span>
+        </div>
+      </div>
+
+       <div class="menu-card reveal">
+        <img src="GulaDiet.png" alt="Gula Diet">
+        <div class="p-6">
+          <h4>Gula Diet (Pemanis Sehat)</h4>
+          <p>Tetap manis dan segar tanpa khawatir kalori berlebih.</p>
+          <span>Rp 1.000</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 bg-gray-950">
+  <div class="max-w-5xl mx-auto text-center reveal">
+    <h3 class="text-3xl font-bold text-gold mb-6">Tentang Kami</h3>
+    <p class="text-gray-300">
+      Es Barokah berkomitmen menghadirkan kebahagiaan dalam setiap rasa
+      dengan bahan berkualitas dan harga terjangkau. <br>
+      Ssst.. Bisa atur sugar levelmu <br>
+      ~ stay healthy🖤
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 bg-black">
+  <div class="max-w-4xl mx-auto text-center reveal">
+    <h3 class="text-3xl font-bold text-gold mb-6">Kontak Kami</h3>
+    <p class="text-gray-300 mb-6">
+      📍 Depan SMKN 1 Rangas, Jln. Abd. Malik Pattana Endeng<br>
+      Kec. Simboro Dan Kepulauan, Kabupaten Mamuju - Sulawesi Barat<br>
+      ⏰ 09.00 - 23.00<br>
+    </p>
+    <a href="https://wa.me/6285787561981" target="_blank" class="cta-btn">
+      WhatsApp Sekarang
+    </a><br><br>
+    <p style="font-size: smaller;">Hubungi kami untuk pemesanan cepat. Datang ke outlet tinggal ambil tanpa antri.</p>
+  </div>
+</section>
+
+<footer class="bg-gray-950 py-6 text-center text-sm text-gray-400">
+ &copy 2025 Es Barokah
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background: #D4AF37;
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+}
+
+/* Menu Card */
+.menu-card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+}
+
+.menu-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.menu-card p {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.menu-card span {
+  color: #D4AF37;
+  font-weight: 700;
+}
+
+/* Image card */
+.menu-image {
+  position: relative;
+  width: 100%;
+  height: 190px;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge Size */
+.menu-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #D4AF37;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 30;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-badge p {
+    margin: 2px;
+    color: #000;
+}
+
+.menu-price {
+  display: block;
+  margin-top: 6px;
+  color: #FFD700;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.menu-price small {
+  color: #ddd;
+  font-size: 0.7rem;
+}
+
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE MENU CARDS  */
+/* ============================= */
+@media (max-width: 640px) {
+
+  /* Container menu jadi horizontal scroll */
+  #menu .grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  /* Hilangkan scrollbar (opsional, estetik) */
+  #menu .grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ukuran card diperkecil */
+  .menu-card {
+    min-width: 140px;
+    max-width: 140px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  /* Gambar diperkecil */
+  .menu-card img {
+    height: 110px;
+  }
+
+  /* Text lebih ringkas */
+  .menu-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  .menu-card p {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .menu-card span {
+    font-size: 0.8rem;
+  }
+
+  /* Padding card lebih hemat */
+  .menu-card .p-6 {
+    padding: 10px;
+  }
+
+  .menu-badge {
+    font-size: 0.55rem;
+    padding: 3px 6px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .menu-price {
+    font-size: 0.8rem;
+  }
+
+  .menu-price small {
+    font-size: 0.6rem;
+  }
+
+  .menu-image {
+    height: 120px;
+  }
+
+  .menu-badge {
+    font-size: 0.55rem;
+    padding: 3px 8px;
+  }
+}
